@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 
+	
+	
 
 //	let name = "Paul Solt"	// Swift
 	NSString *name = @"Paul Solt";   // Object
@@ -29,6 +31,8 @@
 	
 //	print("Hi my name is \(name)") // Swift
 	NSLog(@"Hi my name is %@ there are %lu characters in my name", name, name.length);  // %@ = token that matches an object
+	NSLog(@"Hi my name is %@ there are %lu characters in my name", name, [name length]);  // %@ = token that matches an object
+
 	
 	char *nameInC = "Paul Solt";  // C-string 
 	printf("Hi my name is %s\n", nameInC);
@@ -50,8 +54,20 @@
 											   releaseDate:@"October 7th, 2019"];
 	NSLog(@"Version: %@ releaseDate: %@", version.name, version.releaseDate);
 	
+	[version printDate];
+//	[version releaseDateToInt]; // PRIVATE METHOD!
+	
+	// Class method versus Instance Method
+	// Instance method is owned by the instance
+	// Class method is owned by the class
 
+	//	[version versionCount]; // ERROR: No visible @interface for 'LSIVersion' declares the selector 'versionCount'
 
+	LSIVersion *version2 = [[LSIVersion alloc] initWithName:@"Catalina"
+											   releaseDate:@"October 7th, 2019"];
+
+	
+	NSLog(@"version Count: %i", [LSIVersion versionCount]);
 }
 
 
