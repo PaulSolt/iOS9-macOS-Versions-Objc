@@ -50,7 +50,7 @@
 											   releaseDate:@"October 7th, 2019"];
 	NSLog(@"Version: %@ releaseDate: %@", version.name, version.releaseDate);
 	
-
+    [version printDate];
 
 }
 
