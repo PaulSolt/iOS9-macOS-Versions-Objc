@@ -65,7 +65,7 @@
 
 	LSIVersion *version2 = [[LSIVersion alloc] initWithName:@"Catalina"
 											   releaseDate:@"October 7th, 2019"];
-
+	NSLog(@"logOutput: %i", logOutput(54));
 	
 	NSLog(@"version Count: %i", [LSIVersion versionCount]);
 }

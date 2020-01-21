@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+
+// C function declaration
+int logOutput(int number);
+
 // Interface (Class definition)
 // Public interface
 
@@ -48,4 +52,4 @@
 + (int)versionCount;
 
 
-@end
+@end // End of the class

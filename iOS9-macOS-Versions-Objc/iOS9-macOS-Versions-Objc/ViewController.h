@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+// Command + Control + Up Arrow: Switch files
+// Command + Option + Control + Enter: Show the counterpart file
 
 @end
 
