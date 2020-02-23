@@ -31,4 +31,15 @@
 	return self;
 }
 
+// Public method that has no return type
+- (void)printDate {
+//	print("macOS: \(self.name) was released on \(self.releaseDate)")
+	NSLog(@"macOS: %@ was released on %@", self.name, self.releaseDate);  // %@ = Object
+}
+
+// Private method that returns an int value
+- (int)releaseDateToInt {
+	return [self.releaseDate intValue];
+}
+
 @end

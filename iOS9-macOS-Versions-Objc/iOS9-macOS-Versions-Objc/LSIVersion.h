@@ -43,4 +43,7 @@
 // +/- = class method/instance method  // Swift: class or static
 // (instancetype) = (return type) instancetype means it's returning a LSIVersion object
 
+- (void)printDate;
+
+
 @end

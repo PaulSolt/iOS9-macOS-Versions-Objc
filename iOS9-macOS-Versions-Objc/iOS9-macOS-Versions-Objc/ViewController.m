@@ -20,7 +20,7 @@
 
 
 //	let name = "Paul Solt"	// Swift
-	NSString *name = @"Paul Solt";   // Object
+	NSString *name = @"Jake Man";   // Object
 	
 	// @"Objective-C String"
 	// "C string"  = C programming language
@@ -30,7 +30,7 @@
 //	print("Hi my name is \(name)") // Swift
 	NSLog(@"Hi my name is %@ there are %lu characters in my name", name, name.length);  // %@ = token that matches an object
 	
-	char *nameInC = "Paul Solt";  // C-string 
+	char *nameInC = "Jake Man";  // C-string 
 	printf("Hi my name is %s\n", nameInC);
 	
 	printf("Hi my name is %s\n", name.UTF8String);
@@ -50,7 +50,7 @@
 											   releaseDate:@"October 7th, 2019"];
 	NSLog(@"Version: %@ releaseDate: %@", version.name, version.releaseDate);
 	
-
+    [version printDate];
 
 }
 
